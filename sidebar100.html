@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slidebar</title>
+
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+<div class="navigation">
+    <!-- <div class="navigation active"></div> -->
+        <div class="userbox">
+            <div class="imgx">
+               <img src="1671100373308.JPEG">
+               
+            </div>
+            <p class="username">Er vk</p>
+        </div>
+        <div class="menutoggle"></div>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Models</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+
+        </ul>
+</div>
+<script>
+    let menutoggle = document.querySelector('.menutoggle');
+    let navigation = document.querySelector('.navigation');
+    menutoggle.onclick=function()
+    {
+        navigation.classList.toggle('active')
+    }
+</script>
+</body>
+</html>
